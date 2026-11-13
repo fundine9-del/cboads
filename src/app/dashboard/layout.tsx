@@ -40,6 +40,9 @@ export default async function DashboardLayout({
             <Link href="/dashboard/users" className="text-[#010101] hover:text-[#9a3f2c]">
               Users
             </Link>
+            <Link href="/dashboard/marquee" className="text-[#010101] hover:text-[#9a3f2c]">
+              Marquee
+            </Link>
             <Link href="/dashboard/change-password" className="text-[#010101] hover:text-[#9a3f2c]">
               Change Password
             </Link>
