@@ -105,7 +105,7 @@ export default function MarqueePage() {
             type="file"
             accept="image/*"
             onChange={(e) => setFile(e.target.files?.[0] ?? null)}
-            className="block w-full text-sm text-[#464847] file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:bg-[#fbe0d5] file:text-[#9a3f2c] hover:file:bg-[#fbe0d5]"
+            className="block w-full text-sm text-[#010101] file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:bg-[#fbe0d5] file:text-[#9a3f2c] hover:file:bg-[#fbe0d5]"
           />
         </div>
         <div>
@@ -155,7 +155,7 @@ export default function MarqueePage() {
       </form>
 
       {items.length === 0 ? (
-        <p className="text-[#464847]">No marquee images yet.</p>
+        <p className="text-[#010101]">No marquee images yet.</p>
       ) : (
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
           {items.map((item) => (

@@ -20,12 +20,12 @@ export default async function UsersPage() {
   return (
     <div>
       <h2 className="text-2xl font-bold mb-6">Users</h2>
-      <p className="text-sm text-[#464847] mb-4">
+      <p className="text-sm text-[#010101] mb-4">
         Manage user roles. Only admins can access this panel.
       </p>
 
       {!users || users.length === 0 ? (
-        <p className="text-[#464847]">No users found.</p>
+        <p className="text-[#010101]">No users found.</p>
       ) : (
         <div className="bg-white rounded-xl shadow overflow-hidden">
           <table className="w-full text-sm">
@@ -46,13 +46,13 @@ export default async function UsersPage() {
                       className={
                         u.role === "admin"
                           ? "text-[#9a3f2c] font-semibold"
-                          : "text-[#464847]"
+                          : "text-[#010101]"
                       }
                     >
                       {u.role}
                     </span>
                   </td>
-                  <td className="px-4 py-3 text-[#464847]">
+                  <td className="px-4 py-3 text-[#010101]">
                     {new Date(u.created_at).toLocaleDateString()}
                   </td>
                   <td className="px-4 py-3">

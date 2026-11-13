@@ -30,7 +30,7 @@ export default async function DashboardPage() {
       </div>
 
       {!posts || posts.length === 0 ? (
-        <p className="text-[#464847]">No posts yet. Create your first one.</p>
+        <p className="text-[#010101]">No posts yet. Create your first one.</p>
       ) : (
         <div className="space-y-4">
           {posts.map((post) => (
@@ -42,10 +42,10 @@ export default async function DashboardPage() {
                 <h3 className="font-semibold text-lg truncate">
                   {post.title || "Untitled"}
                 </h3>
-                <p className="text-sm text-[#464847] line-clamp-2 mt-1">
+                <p className="text-sm text-[#010101] line-clamp-2 mt-1">
                   {post.body}
                 </p>
-                <p className="text-xs text-[#464847] mt-2">
+                <p className="text-xs text-[#010101] mt-2">
                   {post.published ? "Published" : "Draft"} &middot;{" "}
                   {new Date(post.created_at).toLocaleDateString()}
                   {post.image_urls?.length

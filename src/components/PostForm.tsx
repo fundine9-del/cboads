@@ -156,7 +156,7 @@ export default function PostForm({ initial }: { initial?: Initial }) {
           <button
             type="button"
             onClick={() => fileInputRef.current?.click()}
-            className="aspect-square rounded-lg border-2 border-dashed border-gray-400 bg-white hover:bg-[#fffce6] flex flex-col items-center justify-center text-[#464847] hover:text-[#9a3f2c] transition"
+            className="aspect-square rounded-lg border-2 border-dashed border-gray-400 bg-white hover:bg-[#fffce6] flex flex-col items-center justify-center text-[#010101] hover:text-[#9a3f2c] transition"
           >
             <span className="text-3xl leading-none">+</span>
             <span className="text-xs mt-1">Add image</span>
@@ -175,7 +175,7 @@ export default function PostForm({ initial }: { initial?: Initial }) {
           }}
           className="hidden"
         />
-        <p className="text-xs text-[#464847] mt-2">
+        <p className="text-xs text-[#010101] mt-2">
           You can select multiple images at once. Click "Add image" to add more.
         </p>
       </div>
